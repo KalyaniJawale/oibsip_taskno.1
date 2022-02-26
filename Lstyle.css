@@ -1,0 +1,209 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	
+	font-weight: 500;
+	color: #fff;
+	font-size: 22px;
+	font-family: Times, "Times New Roman", Georgia, serif;
+	overflow: hidden;
+	overflow:scroll;
+	
+}
+
+.navbar{
+	display: grid;
+	grid-template-columns: repeat(5,400px 1fr 1fr 1fr 1fr);
+	margin-top: 20px;
+	grid-gap: 20px;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+li:nth-child(1){
+	margin-right: 150px
+}
+
+li:nth-child(2){
+	margin-left: 450px
+}
+
+.nav-link{
+	text-align: center;
+	padding: 10px 30px;
+	padding-top: 5px;
+	border-radius: 50px;
+}
+
+.nav-link:not(:first-of-type){
+	background-color: #17375b;
+	transition: transform .3s;
+}
+
+.nav-link:not(:first-of-type):hover{
+	background-color: #4475e2;
+	cursor: pointer;
+	transform: translateY(5px);
+}
+
+header .logo img{
+	position: fixed;
+	height: 75px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%; /* Set the width of the sidebar */
+  padding: 20px; /* Some padding */
+  font-family:  'Lobster', cursive;
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: pink; /* White background color */
+  padding: 20px; /* Some padding */
+  text-align: center;
+ }
+
+.bg{
+	position: fixed;
+}
+
+.side{
+	color: black;
+	overflow:scroll;
+	height:480px;
+	width: 200px;
+	background-color: lightyellow;
+}
+
+.side-content{
+	text-align: center;
+}
+
+img {
+  border: 5px solid #555;
+}
+ 
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+
+
+ .button {
+  border-radius: 4px;
+  background-color: #A600FF;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.footer {
+  padding: 70px; /* Some padding */
+  text-align: center; /* Center text*/
+  color: black;
+ }
+
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+
